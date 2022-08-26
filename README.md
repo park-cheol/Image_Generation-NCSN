@@ -34,7 +34,7 @@ $$p.d.f = p_\theta (x) = \frac{\mathrm{e}^{-f_\theta (x)}}{Z_\theta}$$
 
 $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 
-- 하지만, $Z_\theta = a intractable quantity for any general f_\theta (x)$
+- 하지만, $Z_\theta$ = a intractable quantity for any general $f_\theta (x)$
   - 이를 tractable 해주기 위해서 architecture에 제약
   - 또는, normalizing constant를 추정하기에는 계산량이 너무 큼
   
@@ -50,7 +50,9 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 >
 > $$\mathbb{E}_p(x) \[ \parallel \nabla_x \log p(x) - S_\theta (x) \parallel_{2}^{2} \]$$
 
-### [Score Matching](!https://scholar.google.co.kr/scholar?hl=ko&as_sdt=0%2C5&q=Estimation+of+non-normalized+statistical+models+by+score+matching&btnG=) and [Denoising Score Matching](!http://www.iro.umontreal.ca/~vincentp/Publications/smdae_techreport.pdf)
+### Score Matching and Denoising Score Matching
+
+- 하지만,$\nabla_x \log p(x)$ 는 unknown data score -> **[Score Matching](!https://www.jmlr.org/papers/volume6/hyvarinen05a/hyvarinen05a.pdf)**
 
 
 
