@@ -54,6 +54,8 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 
 - 하지만, $\nabla_x \log p(x)$ 는 unknown data score -> **[Score Matching](https://www.jmlr.org/papers/volume6/hyvarinen05a/hyvarinen05a.pdf)**
 
+> $$\mathbb{E}_p(x) \[ tr(\nabla_x S_\theta (x)) + \frac{1}{2} \parallel S_\theta (x) \parallel_{2}^{2} \]$$
+
 
 
 # Reference
