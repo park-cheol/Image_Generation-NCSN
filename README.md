@@ -39,9 +39,12 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
   - 또는, normalizing constant를 추정하기에는 계산량이 너무 큼
   
 
-> Sol) Score 사용하면 Z term 삭제 가능
+> - Sol) Score 사용하면 Z term 삭제 가능
+> - $S_\theta (x) : Score-based model$
 > 
 > $$Score = \nabla_x \log p(x)$$
+> 
+> $$S_\theta (x) \thickapprox \nabla_x \log p(x) = - \nabla_x f_\theta (x) - \nabla_x \log Z_\theta = -\nabla_x f_\theta (x)$$
 
 
 
