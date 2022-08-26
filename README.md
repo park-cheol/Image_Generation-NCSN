@@ -65,6 +65,11 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 > - $q_\sigma (\tilde{x}) \triangleq \int q_\sigma (\tilde{x} | (x)) p(x) dx$ : the perturbed data distribution
 > 
 > $$\frac{1}{2} \mathbb{E}_{q_{\sigma} (\tilde{x} | (x)) p(x)} \[ \parallel S_\theta (\tilde{x}) - \nabla_x \log q_\sigma (\tilde{x} | x) \parallel_{2}^{2} \]$$
+> 
+> - 노이즈가 충분히 작으면,
+> 
+> $$S_\theta^* (x) = \nabla_x \log q_\simga (x) \thickapprox \nabla_x \log p(x)$$
+> $$q_\simga (x) \thickapprox p(x)$$
 
 
 # Reference
