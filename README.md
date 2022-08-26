@@ -54,8 +54,15 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 
 - 하지만, $\nabla_x \log p(x)$ 는 unknown data score -> **[Score Matching](https://www.jmlr.org/papers/volume6/hyvarinen05a/hyvarinen05a.pdf)**
 
+> $p(x)$ term 삭제
+> 
 > $$\mathbb{E}_p(x) \[ tr(\nabla_x S_\theta (x)) + \frac{1}{2} \parallel S_\theta (x) \parallel_{2}^{2} \]$$
+ 
+- 하지만, $tr(\nabla_x S_\theta (x))$ 이 너무 계산량이 많음 -> **[Denoising Score Matching](http://www.iro.umontreal.ca/~vincentp/Publications/smdae_techreport.pdf)**
 
+> $tr(\nabla_x S_\theta (x))$ term 삭제
+> - $q_\sigma (\tilde{x} | (x))$ : 사전에 정의된 노이즈
+> - $q_\sigma (\tilde{x}) \triangleq \int q_\sigma (\tilde{x} | (x) p_data(x) dx$ : the perturbed data distribution
 
 
 # Reference
