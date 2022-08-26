@@ -68,8 +68,8 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 > 
 > - 노이즈가 충분히 작으면,
 > 
-> $$S_\theta^* (x) = \nabla_x \log q_\simga (x) \thickapprox \nabla_x \log p(x)$$
-> $$q_\simga (x) \thickapprox p(x)$$
+> $$S_\{theta^*} (x) = \nabla_x \log q_\simga (x) \thickapprox \nabla_x \log p(x)$$
+> $$q_\sigma (x) \thickapprox p(x)$$
 
 
 # Reference
