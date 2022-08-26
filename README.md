@@ -50,6 +50,8 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 >
 > $$\mathbb{E}_p(x) \[ \parallel \nabla_x \log p(x) - S_\theta (x) \parallel_{2}^{2} \]$$
 
+![2](https://user-images.githubusercontent.com/76771847/186828121-250d06ac-834f-4bc3-9bb3-ff8a8444d6da.png)
+
 ### Score Matching and Denoising Score Matching
 
 - 하지만, $\nabla_x \log p(x)$ 는 unknown data score -> **[Score Matching](https://www.jmlr.org/papers/volume6/hyvarinen05a/hyvarinen05a.pdf)**
@@ -70,6 +72,12 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 > 
 > $$S_{\theta^*} (x) = \nabla_x \log q_\sigma (x) \thickapprox \nabla_x \log p(x)$$
 > $$q_\sigma (x) \thickapprox p(x)$$
+
+### Langevin dynamics
+ 
+- 학습이 완료된 score-based model($S_\theta (x) \thickapprox \nabla_x \log p(x)$)을 sampling
+
+> $$x_{i+1} <- x_i + \varepsilon \nabla_x \log p(x) + \sqrt(2 \varepsilon)z_i$$
 
 
 # Reference
