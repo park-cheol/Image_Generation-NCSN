@@ -103,6 +103,10 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 > - score-based model = $S_\theta (x, i)$
 > - 추정하는 score function = noise-perturbed distribution $\nabla_x \log p_{\sigma_{i}} (x)$
 
+### Annealed Langevin dynamics
 
+- 처음에는 노이즈가 큰 공간에서 Sampling
+- 점차 노이즈를 줄이면서 다시 Sampling 실행
+![7](https://user-images.githubusercontent.com/76771847/186843729-6ef88984-98f3-43c5-9365-ccc24595fa9b.gif)
  
 # Reference
