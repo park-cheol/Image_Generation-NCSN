@@ -75,9 +75,12 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 
 ### Langevin dynamics
  
-- 학습이 완료된 score-based model($S_\theta (x) \thickapprox \nabla_x \log p(x)$)을 sampling
+- 학습이 완료된 score-based model( $S_\theta (x) \thickapprox \nabla_x \log p(x)$ )을 sampling
 
-> $$x_{i+1} \leftarrow x_i + \varepsilon \nabla_x \log p(x) + \sqrt{2 \varepsilon}z_i$$
+> - $z_i ~ N(0, I)$
+> - $\varepsilon \rightarrow 0 & K \rightarrow \infty$ 할 때, $x_K$ 는 $p(x)$ 에 수렴 
+> 
+> $$x_{i+1} \leftarrow x_i + \varepsilon \nabla_x \log p(x) + \sqrt{2 \varepsilon}z_i, i=0, 1, ..., K$$
 
 
 # Reference
