@@ -26,7 +26,7 @@
 - $p(x)$: data distribution
 - ${x_1, x_2, ..., x_N}$: $p(x)$로부터 독립적으로 추출한 dataset
 - $f_\theta(x)$: real-valued function parameterized by a learnable parameter $\theta$
-- $Z_\theta (> 0)$: normalizing constant dependent on $\theta$ ($\int p(x)_\theta dx = 1$) 
+- $Z_\theta (> 0)$: normalizing constant dependent on $\theta$ ( $\int p(x)_\theta dx = 1$ )
 
 $$p.d.f = p_\theta (x) = \frac{\mathrm{e}^{-f_\theta (x)}}{Z_\theta}$$
 
