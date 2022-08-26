@@ -63,6 +63,8 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 > - $tr(\nabla_x S_\theta (x))$ term 삭제
 > - $q_\sigma (\tilde{x} | (x))$ : 사전에 정의된 노이즈
 > - $q_\sigma (\tilde{x}) \triangleq \int q_\sigma (\tilde{x} | (x)) p(x) dx$ : the perturbed data distribution
+> 
+> $$\frac{1}{2} \mathbb{E}_{q_\sigma (\tilde{x} | (x)) p(x)} \[ \parallel S_\theta (\tilde{x}) - \nabla_x \log q_\sigma (\tilde{x} | x) \parallel_{2}^{2} \]$$
 
 
 # Reference
