@@ -78,10 +78,26 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 - 학습이 완료된 score-based model( $S_\theta (x) \thickapprox \nabla_x \log p(x)$ )을 sampling
 
 > - $z_i \sim N(0, I)$
-> - $\varepsilon \rightarrow 0 and K \rightarrow \infty$ 할 때, $x_K$ 는 $p(x)$ 에 수렴 
+> - $\varepsilon \rightarrow 0 \And K \rightarrow \infty$ 할 때, $x_K$ 는 $p(x)$ 에 수렴 
 > 
 > $$x_{i+1} \leftarrow x_i + \varepsilon \nabla_x \log p(x) + \sqrt{2 \varepsilon}z_i, i=0, 1, ..., K$$
-> 
+![3](https://user-images.githubusercontent.com/76771847/186839953-e4c977f4-075c-4c9b-aa34-be444fafda7f.gif)
 
+### Pitfalls
+
+- Low density regions에서는 거의 없는 data point때문에 부정확한 score function을 예측
+![5](https://user-images.githubusercontent.com/76771847/186840279-db12f8d9-acbe-424b-b793-684474247c4a.jpg)
+
+
+- Data에 가우시안 노이즈를 추가하여 low density regions를 채워줌
+![6](https://user-images.githubusercontent.com/76771847/186840597-cf83ca70-b7a2-4cd3-aa10-36a15d981361.jpg)
+  - Noise 너무 크면, 원래의 분포를 over-corrupts
+  - Noise 너무 작으면, Low Density Regions을 충분히 채워주지 못함
+
+> - **Multiple Scales of Noise Pertubations**
+> - $\sigma_1 < \sigma_2 < ... < \sigma_L$
+> - $N(0, \sigma_{i}^{2}I), i= 1, 2, ..., L$
+> 
+> &&p_{\sigma_i} (x) = \int p(y)N(x; y, \sigma_{i}^{2}I) dy&&
 
 # Reference
