@@ -77,7 +77,7 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
  
 - 학습이 완료된 score-based model($S_\theta (x) \thickapprox \nabla_x \log p(x)$)을 sampling
 
-> $$x_{i+1} <- x_i + \varepsilon \nabla_x \log p(x) + \sqrt(2 \varepsilon)z_i$$
+> $$x_{i+1} \leftarrow x_i + \varepsilon \nabla_x \log p(x) + \sqrt{2 \varepsilon}z_i$$
 
 
 # Reference
