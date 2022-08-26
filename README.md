@@ -99,5 +99,10 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 > - $N(0, \sigma_{i}^{2}I), i= 1, 2, ..., L$
 > 
 > $$p_{\sigma_i} (x) = \int p(y)N(x; y, \sigma_{i}^{2}I) dy$$
+> 
+> - score-based model = $S_\theta (x, i)$
+> - 추정하는 score function = noise-perturbed distribution $\nabla_x \log p_{\sigma_{i}} (x)$
 
+
+ 
 # Reference
