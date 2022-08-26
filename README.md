@@ -23,8 +23,8 @@
 
 ### Score function
 
-- p(x): data distribution
-- {x_1, x_2, ..., x_N}: p(x)로부터 독립적으로 추출한 dataset
+- $p(x)$: data distribution
+- ${x_1, x_2, ..., x_N}$: p(x)로부터 독립적으로 추출한 dataset
 - $x+y=1$
 - 
 
