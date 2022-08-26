@@ -37,8 +37,11 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 - 하지만, $Z_\theta = a intractable quantity for any general f_\theta (x)$
   - 이를 tractable 해주기 위해서 architecture에 제약
   - 또는, normalizing constant를 추정하기에는 계산량이 너무 큼
+  
 
-> **$$Score function = \nable_x \log p(x)$$**
+> Sol) Score 사용하면 Z term 삭제 가능
+> 
+> $$Score = \nabla_x \log p(x)$$
 
 
 
