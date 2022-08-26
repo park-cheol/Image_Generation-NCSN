@@ -28,7 +28,7 @@
 - $f_\theta(x)$: real-valued function parameterized by a learnable parameter $\theta$
 - $Z_\theta (> 0)$: normalizing constant dependent on $\theta$ 
 
-$$p.d.f = p_\theta (x) = \exp -f_\theta (x)/Z_\theta$$
+$$p.d.f = p_\theta (x) = \exp (-f_\theta (x)) \over Z_\theta$$
 
 
 
