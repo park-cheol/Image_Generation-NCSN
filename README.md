@@ -52,7 +52,7 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 
 ### Score Matching and Denoising Score Matching
 
-- 하지만,$\nabla_x \log p(x)$ 는 unknown data score -> **[Score Matching](!https://www.jmlr.org/papers/volume6/hyvarinen05a/hyvarinen05a.pdf)**
+- 하지만, $\nabla_x \log p(x)$ 는 unknown data score -> **[Score Matching](https://www.jmlr.org/papers/volume6/hyvarinen05a/hyvarinen05a.pdf)**
 
 
 
