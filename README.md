@@ -32,7 +32,7 @@ $$p.d.f = p_\theta (x) = \frac{\mathrm{e}^{-f_\theta (x)}}{Z_\theta}$$
 
 - Maximize the log-likelihood of the data
 
-&&Max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)&&
+$$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 
 
 
