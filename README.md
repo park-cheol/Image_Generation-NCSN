@@ -50,6 +50,8 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 >
 > $$\mathbb{E}_p(x) \[ \parallel \nabla_x \log p(x) - S_\theta (x) \parallel_{2}^{2} \]$$
 
+### [Score Matching](!https://scholar.google.co.kr/scholar?hl=ko&as_sdt=0%2C5&q=Estimation+of+non-normalized+statistical+models+by+score+matching&btnG=) and [Denoising Score Matching](!http://www.iro.umontreal.ca/~vincentp/Publications/smdae_techreport.pdf)
+
 
 
 # Reference
