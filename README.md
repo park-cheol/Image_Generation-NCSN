@@ -48,7 +48,7 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 > 
 > **Fisher divergence**
 >
-> $$\mathbb{E}_(p(x)) \[ \parallel \nabla_x \log p(x) - S_\theta (x) \parallel_{2}^{2} \]$$
+> $$\mathbb{E}_p(x) \[ \parallel \nabla_x \log p(x) - S_\theta (x) \parallel_{2}^{2} \]$$
 
 ### Score Matching and Denoising Score Matching
 
@@ -56,15 +56,12 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 
 > $p(x)$ term 삭제
 > 
-> $$\mathbb{E}_(p(x)) \[ tr(\nabla_x S_\theta (x)) + \frac{1}{2} \parallel S_\theta (x) \parallel_{2}^{2} \]$$
+> $$\mathbb{E}_p(x) \[ tr(\nabla_x S_\theta (x)) + \frac{1}{2} \parallel S_\theta (x) \parallel_{2}^{2} \]$$
  
 - 하지만, $tr(\nabla_x S_\theta (x))$ 이 너무 계산량이 많음 -> **[Denoising Score Matching](http://www.iro.umontreal.ca/~vincentp/Publications/smdae_techreport.pdf)**
-
 > $tr(\nabla_x S_\theta (x))$ term 삭제
 > - $q_\sigma (\tilde{x} | (x))$ : 사전에 정의된 노이즈
 > - $q_\sigma (\tilde{x}) \triangleq \int q_\sigma (\tilde{x} | (x)) p(x) dx$ : the perturbed data distribution
-> 
-> $$\frac{1}{2} \mathbb{E}_$$
 
 
 # Reference
