@@ -108,5 +108,13 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 - 처음에는 노이즈가 큰 공간에서 Sampling
 - 점차 노이즈를 줄이면서 다시 Sampling 실행
 ![7](https://user-images.githubusercontent.com/76771847/186843729-6ef88984-98f3-43c5-9365-ccc24595fa9b.gif)
- 
+
+# Results
+ - 추후 기재
+
 # Reference
+
+- [Yang-Song blog](https://yang-song.net/blog/2021/score/)
+- [NCSN Paper](https://arxiv.org/abs/1907.05600)
+- [Official Code](https://github.com/yang-song/score_sde_pytorch)
+- [Code](https://github.com/ermongroup/ncsn/tree/7f27f4a16471d20a0af3be8b8b4c2ec57c8a0bc1)
