@@ -98,6 +98,6 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 > - $\sigma_1 < \sigma_2 < ... < \sigma_L$
 > - $N(0, \sigma_{i}^{2}I), i= 1, 2, ..., L$
 > 
-> &&p_{\sigma_i} (x) = \int p(y)N(x; y, \sigma_{i}^{2}I) dy&&
+> $$p_{\sigma_i} (x) = \int p(y)N(x; y, \sigma_{i}^{2}I) dy$$
 
 # Reference
