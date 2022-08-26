@@ -80,7 +80,7 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 > - $z_i \sim N(0, I)$
 > - $\varepsilon \rightarrow 0 \And K \rightarrow \infty$ 할 때, $x_K$ 는 $p(x)$ 에 수렴 
 > 
-> $$x_{i+1} \leftarrow x_i + \varepsilon \nabla_x \log p(x) + \sqrt{2 \varepsilon}z_i, i=0, 1, ..., K$$
+> $$x_{i+1} \leftarrow x_i + \frac{\varepsilon}{2} \nabla_x \log p(x) + \sqrt{\varepsilon}z_i, i=0, 1, ..., K$$
 ![3](https://user-images.githubusercontent.com/76771847/186839953-e4c977f4-075c-4c9b-aa34-be444fafda7f.gif)
 
 ### Pitfalls
