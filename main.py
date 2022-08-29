@@ -138,14 +138,14 @@ def main_worker(gpu, ngpus_per_node, args):
             scorenet.cuda()
             # DistributedDataParallel will divide and allocate batch_size to all
             # available GPUs if device_ids are not set
-            generator = torch.nn.parallel.DistributedDataParallel(scorenet)
+            scorenet = torch.nn.parallel.DistributedDataParallel(scorenet)
 
     elif args.gpu is not None:
         torch.cuda.set_device(args.gpu)
-        generator = scorenet.cuda(args.gpu)
+        scorenet = scorenet.cuda(args.gpu)
 
     else:
-        generator = torch.nn.DataParallel(scorenet).cuda()
+        scorenet = torch.nn.DataParallel(scorenet).cuda()
 
     # Optimizer / criterion(wSDR)
     criterion = anneal_dsm_score_estimation
