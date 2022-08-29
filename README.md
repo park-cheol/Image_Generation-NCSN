@@ -109,12 +109,39 @@ $$\max_{\theta} \sum_{i=1}^{N} \log p_\theta (x_i)$$
 - 점차 노이즈를 줄이면서 다시 Sampling 실행
 ![7](https://user-images.githubusercontent.com/76771847/186843729-6ef88984-98f3-43c5-9365-ccc24595fa9b.gif)
 
+# Implement
+
+    mkdir outputs saved_models datasets
+
+- CIFAR10
+    
+  
+    python main.py --gpu 0 --batch-size 128
+
 # Results
- - 추후 기재
+
+- **Iter: 0**
+    
+  ![movie](https://user-images.githubusercontent.com/76771847/187129377-6c1b0bc0-949c-44e9-bee5-4f1be4540966.gif)
+
+
+- **Iter: 20,000**
+
+  ![movie](https://user-images.githubusercontent.com/76771847/187129632-44456c73-c47e-4586-af88-2664e33bf194.gif)
+
+
+- **Iter: 60,000**
+
+  ![movie](https://user-images.githubusercontent.com/76771847/187129697-7b30f2dd-23e9-400c-8eda-bdb71c96e135.gif)
+
+
+- **Iter: 90,000**
+
+  ![movie](https://user-images.githubusercontent.com/76771847/187129744-8f541087-17ce-4316-b4b8-345328d20f32.gif)
 
 # Reference
 
 - [Yang-Song blog](https://yang-song.net/blog/2021/score/)
 - [NCSN Paper](https://arxiv.org/abs/1907.05600)
-- [Official Code](https://github.com/yang-song/score_sde_pytorch)
+- [Code](https://github.com/yang-song/score_sde_pytorch)
 - [Code](https://github.com/ermongroup/ncsn/tree/7f27f4a16471d20a0af3be8b8b4c2ec57c8a0bc1)
